@@ -6,7 +6,7 @@ numstring=""
 alphastring=""
 for i in range(len(st)):
      ch=st[i]
-     print(myStack)
+     #print(myStack)
      if ch.isdigit():
           numstring+=ch
           if alphastring!="":
