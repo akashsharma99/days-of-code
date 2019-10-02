@@ -1,10 +1,12 @@
+#edit this comment line if you find any testcase which will fail for the below code.
 from collections import deque
 st=input("Enter a compressed string: ")
 myStack=deque()
 numstring=""
 alphastring=""
-for ch in st:
-     #print(myStack)
+for i in range(len(st)):
+     ch=st[i]
+     print(myStack)
      if ch.isdigit():
           numstring+=ch
           if alphastring!="":
@@ -32,7 +34,7 @@ for ch in st:
                
           else:
                m=int(myStack.pop())
-               myStack.append(top*m)
+               myStack.append((top+alphastring)*m)
                alphastring=""
 solution=alphastring
 while(len(myStack)>0):
@@ -62,6 +64,7 @@ Brackets are only part of syntax of writing repeated substring.
 
 Input is always valid, so no need to check its validity.
 input can be like 
+2[3[f]b] output-> fffbfffb
 2[b]akash2[sharma] output-> bbakashsharmasharma
 2[3[ab]akash]sharma output-> abababakashabababakashsharma
 2[a2[k]] output-> akkakk
