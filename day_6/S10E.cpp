@@ -29,6 +29,7 @@ Example Output
 2
 Explanation
 Example case 1: Chef considers the price to be good on day 1, because he has not observed any prices on the previous days. The prices on days 2,3,4,5,6 are not considered good because they are greater than the price on day 1. Finally, the price on day 7 is considered good because it is smaller than all of the prices on days 2,3,4,5,6.
+
 */
 #include<iostream>
 #include<list>
