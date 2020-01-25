@@ -68,5 +68,6 @@
           "typeindex": "cpp",
           "typeinfo": "cpp",
           "valarray": "cpp"
-     }
+     },
+     "python.pythonPath": "C:\\Users\\KIIT\\AppData\\Local\\Programs\\Python\\Python36\\python.exe"
 }
